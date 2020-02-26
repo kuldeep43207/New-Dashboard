@@ -1,0 +1,87 @@
+@include small-only {
+
+    .sidebar {
+        width: 0px !important;
+    }
+
+    .sidebar.active, .sidebar.hovered {
+        width: 100% !important;
+    }
+
+    .header #menu-action.active {
+        width: 60px !important;
+        -webkit-transition: all .2s ease-in-out;
+        transition: all .2s ease-in-out;
+    }
+
+    .sidebar {
+        
+        ul {
+            
+            h4 {
+                display: block !important;
+            }
+        }
+    }
+
+    .responsive-mobile-menus {
+        display: block !important;
+    }
+    
+    .header-notification-bar {
+
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 410px) {
+    .header .logo {
+        letter-spacing: 0px !important;
+        font-size: 12px !important;
+    }   
+    
+    .responsive-mobile-menus {
+        width: 45px !important;
+    }
+    
+    .device-img-col img {
+        width: 65px !important;
+        height: 65px !important;
+        border-radius: 50%;
+    }    
+}
+
+@media only screen and (max-width: 767px) and (min-width: 576px) {
+    .main {
+        width: 100% !important;
+        position: static!important;
+        left: 0% !important;
+        @include menu-transition;  
+    }
+}
+
+@media only screen and (max-width: 575px) {
+    .main {
+        width: 100% !important;
+        position: static!important;
+        left: 0% !important;
+        @include menu-transition; 
+        padding-right: 0px !important; 
+    }
+
+    .second-cols-process {
+        padding-right: 15px !important;
+    }
+
+    .last-cols {
+        padding-right: 0px !important;
+    }
+
+    .second-cols {
+        padding-left: 15px !important;
+    }
+
+    .first-left-col {
+        padding-right: 0px !important;  
+    }
+}

@@ -1,0 +1,160 @@
+.device-info, .charts, .temperature-details, .text-panel {;
+    @include main-box-shadow;
+
+    p {
+        color: $menu-link-color;
+    }
+}
+
+.main {
+    width: 96%;
+    position: relative;
+    left: 4%;
+    @include menu-transition;  
+
+    &.active {
+        width: 82%;
+        position: relative;
+        left: 18%; 
+        @include menu-transition;       
+    }
+}
+
+.device-img-col img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+.device-info-col {
+    position: relative;
+
+    .version, .address {
+        font-weight: bold;
+    }
+
+    .device-name {
+        font-size: 12px;
+    }
+
+    .long-lat {
+        font-size: 12px;
+    }
+
+    .device-toggle-arrow {
+        position: absolute;
+        right: 15px;
+        color: #000000;
+    }
+}
+
+.text-panel {
+    
+    .text-panel-header {
+        background-color: $text-panel-bg;
+        padding: 5px 15px;
+        font-weight: bold;
+
+        p {
+            margin: 0;
+        }
+    }
+
+    p {
+        margin: 0;
+        font-size: 12px;
+    }
+
+    .text-panel-footer {
+
+        .line-btns {
+            border: 1px solid #1c79f6;
+            border-radius: 30px;
+            color: #1c79f6;
+            line-height: 18px;
+            margin-right: 5px;
+            font-size: 12px;
+            padding: 3px 10px 6px 10px;
+        }
+    }
+
+    .alarm-time {
+        color: #1c79f6;
+        font-size: 14px;
+    }
+
+    .alarm-priroty {
+        background-color: #f4e2e4;
+        color: #7b2d3a;
+        border-radius: 30px;
+        border: 1px solid #7b2d3a;
+        line-height: 16px;
+        min-width: 45px;
+        padding: 3px 5px 6px 5px;
+        font-size: 12px;
+    }
+
+    .alarm-details {
+
+        p, span {
+            font-size: 12px;
+        }
+    }
+
+    .temp-icons {
+        align-self: center;
+    }
+
+    .alarm-icons {
+
+        .fa-icons-size {
+            font-size: 40px;
+        }
+    }
+}
+
+/************Filmware Section**************/
+
+.filmware-section {
+
+    .nav-tabs {
+
+        .active {
+            background-color: $text-panel-bg !important;
+            border: 1px solid $text-panel-bg !important;
+            color: #1c79f6 !important;         
+        }
+
+        .nav-link {    
+            font-size: 12px;
+            padding: 4px 10px;
+            border: 1px solid #e4e2e2;
+            border-radius: 10px 10px 0px 0px;
+            color: $menu-link-color;
+        }
+    }
+
+    .border-zero-table {
+
+        th, td {
+            padding: .15rem .75rem;
+            vertical-align: middle;
+            font-size: 12px;            
+        }
+    }
+}
+
+/************Filmware Section**************/
+
+.process-one {
+
+    img {
+        width: 40px;
+        margin-bottom: 25px;
+        margin-top: 15px;
+    }
+}
+
+.big-fonts-size {
+    font-size: 20px !important;
+}

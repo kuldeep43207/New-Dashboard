@@ -1,0 +1,30 @@
+@mixin menu-transition {
+    -webkit-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;    
+}
+
+@mixin menu-animations {
+    -webkit-animation-duration: .7s;
+    -moz-animation-duration: .7s;
+    -o-animation-duration: .7s;
+    animation-duration: .7s;
+    -webkit-animation-fill-mode: both;
+    -moz-animation-fill-mode: both;
+    -o-animation-fill-mode: both;
+    animation-fill-mode: both;    
+}
+
+@mixin main-box-shadow {
+    box-shadow: 0px 1px 6px #0000004d;
+    -webkit-box-shadow: 0px 1px 6px #0000004d;
+    border-radius: 10px;
+}
+
+/*************** Media Queries ***********************/
+@mixin small-only {
+    @media screen and (max-width: $small) {
+      @content;
+    }
+}
+
+/*************** Media Queries ***********************/
